@@ -3,7 +3,7 @@ import java.util.Scanner;  // Import the Scanner class
 public class Main {
   public static void main(String[] args) {
 
-    Double miValue  = 0.0;
+    Double outPutValue  = 0.0;
     Double toMiles  = 0.62137;
     int valueInt    = 0;
     Double toInches = 0.39;
@@ -34,43 +34,43 @@ public class Main {
     {
       //////converting from km to mi and from mi to km
       if (unitValue.equals ("km")) {
-        miValue =  (valueInt * toMiles);
-        System.out.println(valueEntered + " km = " + miValue + " mi");
+        outPutValue =  (valueInt * toMiles);
+        System.out.println(valueEntered + " km = " + outPutValue + " mi");
       }
 
       else if (unitValue.equals ("mi")) {
-        miValue = (valueInt / toMiles);
-        System.out.println(valueEntered + " mi = " + miValue + " km" );
+        outPutValue = (valueInt / toMiles);
+        System.out.println(valueEntered + " mi = " + outPutValue + " km" );
       }
 
 
       else if (unitValue.equals ("cm")) {
-        miValue =  (valueInt * toInches);
-        System.out.println(valueEntered + " cm = " + miValue + " in");
+        outPutValue =  (valueInt * toInches);
+        System.out.println(valueEntered + " cm = " + outPutValue + " in");
       }
 
       else if (unitValue.equals ("in")) {
-        miValue = (valueInt / toInches);
-        System.out.println(valueEntered + " in = " + miValue + " cm" );
+        outPutValue = (valueInt / toInches);
+        System.out.println(valueEntered + " in = " + outPutValue + " cm" );
       }
       else if (unitValue.equals ("lb")) {
-        miValue =  (valueInt * toKg);
-        System.out.println(valueEntered + " lb = " + miValue + " kg");
+        outPutValue =  (valueInt * toKg);
+        System.out.println(valueEntered + " lb = " + outPutValue + " kg");
       }
 
       else if (unitValue.equals ("kg")) {
-        miValue = (valueInt / toKg);
-        System.out.println(valueEntered + " kg = " + miValue + " lb" );
+        outPutValue = (valueInt / toKg);
+        System.out.println(valueEntered + " kg = " + outPutValue + " lb" );
       }
 
       else if (unitValue.equals ("C")) {
-        miValue = (valueInt * 1.8) + 32;
-        System.out.println(valueEntered + " C = " + miValue + " F");
+        outPutValue = (valueInt * 1.8) + 32;
+        System.out.println(valueEntered + " C = " + outPutValue + " F");
       }
 
     else if (unitValue.equals ("F")) {
-      miValue = (valueInt - 32) * 0.55555556;
-      System.out.println(valueEntered + " F = " + miValue + " C");
+      outPutValue = (valueInt - 32) * 0.55555556;
+      System.out.println(valueEntered + " F = " + outPutValue + " C");
     }
 
 }
