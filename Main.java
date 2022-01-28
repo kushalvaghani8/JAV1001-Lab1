@@ -10,7 +10,7 @@ public class Main {
     Double toKg     = 0.45;
     Double toF      = 0.0;
 
-    System.out.println("Please enter the number first and after a space unit to convert to \ne.g. '10 km', this converter can convert\n km <-> mi,\n cm <-> in,\n lb <-> kg\n and C <-> F");
+    System.out.println("\nPlease enter the number first and after a space unit to convert to \n e.g. '10 km'. \nThis converter can convert\n km <-> mi,\n cm <-> in,\n lb <-> kg\n and\n C <-> F");
 
     Scanner userValue = new Scanner(System.in); // Create a Scanner object
 
@@ -76,7 +76,7 @@ public class Main {
 }
 
     else {
-      System.out.println("Invalid unit value " + valueEntered + "will not be converted");
+      System.out.println("Invalid unit value " + valueEntered + " will not be converted");
     }
 
   }
