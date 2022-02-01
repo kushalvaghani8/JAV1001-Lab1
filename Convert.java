@@ -7,7 +7,7 @@ Lab 1 - Variables and Logic
 */
 
 
-import java.util.Scanner;  // Import the Scanner class allows to read user input from console
+import java.util.Scanner;  // Import the Scanner class
 
 public class Convert {
   public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class Convert {
     Double userValueDouble     = 0.0;
     Double toMiles             = 0.62137;
     Double toInches            = 0.39;
+    Double toKg                = 0.45;
     Double toF                 = 0.0;
 
     System.out.println("\nPlease enter the number first and after a space unit to convert to \n e.g. '10 km'. \nThis converter can convert\n km <-> mi,\n cm <-> in,\n lb <-> kg\n and\n C <-> F");
@@ -81,6 +82,7 @@ public class Convert {
         outPutValue = (userValueDouble - 32) * 0.55555556;
         System.out.println(userValueEntered + " F = " + String.format("%.2f", outPutValue) + " C");
       }
+
     }
     ////// if unit value entered is incorrect - this message will be displayed
     else {
